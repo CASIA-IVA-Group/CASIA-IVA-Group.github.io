@@ -138,7 +138,7 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Towards Robust Referring Image Segmentation</span>
+		<span style="font-size:36px">OPT: An Omni-Perception pre-Training Benchmark for Multimodal Understanding and Generation</span>
 		<table align=center width=1000px>
 			<table align=center width=800px>
 				<tr>
@@ -209,7 +209,7 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td style="font-size:20px">
-				Referring Image Segmentation (RIS) aims to connect image and language via outputting the corresponding object masks given a text description, which is a fundamental vision-language task. Despite lots of works that have achieved considerable progress for RIS, in this work, we explore an essential question, "what if the description is wrong or misleading of the text description?". We term such a sentence as a negative sentence. However, we find that existing works cannot handle such settings. To this end, we propose a novel formulation of RIS, named Robust Referring Image Segmentation (R-RIS). It considers the negative sentence inputs besides the regularly given text inputs. We present three different datasets via augmenting the input negative sentences and a new metric to unify both input types. Furthermore, we design a new transformer-based model named RefSegformer, where we introduce a token-based vision and language fusion module. Such module can be easily extended to our R-RIS setting by adding extra blank tokens. Our proposed RefSegformer achieves the new state-of-the-art results on three regular RIS datasets and three R-RIS datasets, which serves as a new solid baseline for further research.
+				An intelligent system is required to have omni-perceptual capabilities from multiple modalities including vision, text, and audio. To this end, this paper establishes an \textbf{O}mni-\textbf{P}erception pre-\textbf{T}raining Benchmark(OPT) aiming at promoting the researches about multi-modal understanding and generation through pretraining techniques. A million-level tri-modality benchmark dataset as OPTSet is first collected by manually annotating video with high-quality descriptions from the auditory and visual perspectives. Such a vision-text-audio correlated dataset spawns three new tri-modality tasks, namely      video\&audio retrieval, caption and generation, which are explored together with existing dual-modality tasks to evaluate the performance of an Omni-Perception pre-Training model comprehensively. Furthermore, we design an end-to-end tri-modality pretraining model with raw video, sentences, and audio as inputs, which consists of three separate encoders, a multi-modal encoder, a single multi-modal decoder. Dedicated pretext tasks are designed to achieve multi-modal understanding and generation capability across three modalities, and a modality erasing strategy is adopted to strengthen dual-modality performance. Under OPT benchmark, we achieve state-of-the-arts performances on various downstream tasks including video retrieval, video caption, video QA, audio retrieval and audio caption.
 			</td>
 		</tr>
 	</table>
@@ -232,11 +232,11 @@
 	</table>
 
 	<table align=center width=400px>
-		<center><h1>Negative Sentence Generating Process</h1></center>
+		<center><h1>Dataset:OPtSet</h1></center>
 		<tr>
 			<td align=center width=500px>
 				<center>
-					<td><img class="round" style="width:500px" src="./resources/method_generation.png"/></td>
+					xx.<td><img class="round" style="width:500px" src="./resources/method_generation.png"/></td>
 				</center>
 			</td>
 		</tr>
@@ -245,7 +245,7 @@
 		<center>
 			<tr>
 				<td style="font-size:20px">
-					We presents the five proposed negative sentence generation methods. More details can be found in the paper.
+					
 				</td>
 			</tr>
 		</center>
@@ -254,11 +254,11 @@
 
 
 	<table align=center width=400px>
-		<center><h1>Method: RefSegformer</h1></center>
+		<center><h1>Method: OPT</h1></center>
 		<tr>
 			<td align=center width=1000px>
 				<center>
-					<td><img class="round" style="width:1000px" src="./resources/method_ref_segformer.png"/></td>
+					xx.<td><img class="round" style="width:1000px" src="./resources/method_ref_segformer.png"/></td>
 				</center>
 			</td>
 		</tr>
@@ -267,7 +267,7 @@
 		<center>
 			<tr>
 				<td style="font-size:20px">
-					We present RefSegformer, a transformer-based approach that contains a language encoder, a vision encoder, and an encoder-fusion meta-architecture. In particular, we present a new multi-modal fusion module named Vision-Language Token Fusion (VLTF). Rather than directly fusing across vision and language features, we propose dynamically using memory tokens to select the most relevant language information. Then the selected language context is fused into a vision encoder with Multi-Head Cross Attention (MHCA). The final segmentation results are obtained via an FPN-like decoder which takes the outputs of VLTF in each stage. For the R-RIS setting, we propose to adopt blank tokens to indicate whether the described texts are in the image. The blank tokens are not fused to the vision feature via MHCA, but it is directly optimized by binary cross entropy loss. Our proposed RefSegformer achieves the new state-of-the-art results on both RIS datasets and our R-RIS datasets. Extensive experiments and analyses show the effectiveness of our proposed RefSegformer.
+					
 				</td>
 			</tr>
 		</center>
@@ -276,7 +276,7 @@
 
 
 	<table align=center width=400px>
-		<center><h1>Visual Results: RefSegformer</h1></center>
+		<center><h1>Experimental Results</h1></center>
 		<tr>
 			<td align=center width=800px>
 				<center>
@@ -289,7 +289,7 @@
 		<center>
 			<tr>
 				<td style="font-size:24px">
-				Our method segments both positive and negative sentence well.
+				xx.
 				</td>
 			</tr>
 		</center>
@@ -308,7 +308,7 @@
 	<br>
 
 
-	<table align=center width=900px>
+	<!-- <table align=center width=900px>
 		<tr>
 			<td width=400px>
 				<left>
@@ -317,7 +317,7 @@
 				</left>
 			</td>
 		</tr>
-	</table>
+	</table> -->
 
 <br>
 </body>
